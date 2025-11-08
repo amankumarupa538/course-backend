@@ -25,7 +25,8 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/auth/**",       // allow login/signup
                                 "/api/location/**",   // allow state/city fetch
-                                "/api/courses/**"     // allow viewing public courses
+                                "/api/courses/**", // allow viewing public courses
+                                "/api/contact/**"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )

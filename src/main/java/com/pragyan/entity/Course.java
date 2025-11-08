@@ -3,7 +3,7 @@ package com.pragyan.entity;
 import jakarta.persistence.*;
 import lombok.*;
 @Entity @Getter @Setter @NoArgsConstructor
-public class Course {
+public class  Course {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
     private String title;
     @Column(length=2000) private String description;
